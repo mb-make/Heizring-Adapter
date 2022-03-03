@@ -29,11 +29,13 @@ plate_d_inner = plate_d_outer - plate_thickness;
 
 // Adapterring
 adapter_thickness = 2;
+adapter_d_inner = wall_d_outer + 0.5;
+adapter_d_outer = adapter_d_inner + 2*adapter_thickness;
 adapter_height = wall_height - con_height + adapter_thickness;
 
 // Finger
-finger_width = 6;
-hole_d = 2;
+hole_d = 2.5;
+finger_width = 2*adapter_thickness + hole_d;
 // Uber die Innenkante hinaus verlaengern
 finger_extend = 10;
 // In den aeusseren Ring integrieren
